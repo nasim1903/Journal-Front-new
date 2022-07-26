@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My journal</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/0c8cce3dea.js" crossorigin="anonymous"></script>
+    <script src="assets/script.js" defer></script>
+    <script src="./assets/giphy.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MyJournal</h1>
+    </header>
+
+    <section class="container">
+        <div class="post">
+            <h2>Create post</h2>
+            <form action="#">
+                <textarea placeholder="What`s your story...? (max 500)" cols="45" rows="10" maxlength="500" required></textarea>   
+                <div id="gif-images"></div>        
+                <div class= "options-wrapper">
+                        <div class="options-content">
+                            <input id="search" class="giphy" type="search" placeholder="Search for a gif...">
+                            <button id="btnSearch" class="giphy-button"><img src="./assets/images/hA-SKK84.png"></button>
+                        </div>
+                </div>  
+                <button type="submit" class="share">Share your story</button>
+                <img src="" class="gif" alt="">
+                
+            </form>          
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="post">
+            <p id="singleEntry"></p>
+            <div class="comment">
+            </div>
+            <div class="icons">
+                <button type="submit"><i class="fa-solid fa-thumbs-up fa-xl"></i> </button>
+                <button type="submit"><i class="fa-solid fa-heart fa-beat fa-xl"></i></button>
+                <button type="submit"><i class="fa-solid fa-face-frown fa-xl"></i></button>
+            </div>
+            <div class= "options-wrapper">
+                <div class="options">
+                    <div class="options-content">
+                        <input type="search" class="giphy" placeholder="Search for a gif...">
+                        <button type="submit" class="giphy-button"><img src="./assets/images/hA-SKK84.png"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <form id="form">
+                    <input type="text" id="text" class="options-content input-com" name="text" required placeholder="Add a comment..." >
+                    <div class="options">
+                        <div class="options-content">
+                            <button type="submit" class="share submit-com">Submit your comment</button> 
+                            <div class="icons">
+                                <button type="submit"><i class="fa-solid fa-thumbs-up fa-xl"></i> </button>
+                                <button type="submit"><i class="fa-solid fa-heart fa-beat fa-xl"></i></button>
+                                <button type="submit"><i class="fa-solid fa-face-frown fa-xl"></i></button>
+                                <button type="submit"><img src="./assets/images/hA-SKK84.png"></button>
+                            </div>      
+                        </div>
+                    </div>
+                    
+                    
+                </form>
+                <div>
+                    <ul class="commentList" id="comment1"></ul>
+                </div>
+            </div>            
+        </div>        
+    </section>
+
+</body>
+</html>
